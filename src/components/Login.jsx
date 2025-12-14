@@ -1,6 +1,11 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import CheckValidData from "../utils/validate";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -14,13 +19,52 @@ const Login = () => {
   const handleButtonClick = () => {
     //validate the form data
     let message;
+    //Sign In
     if (isSignInForm) {
       message = CheckValidData(email.current.value, password.current.value);
       setErrorMessage(message);
+      if (errorMessage) return;
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log(user);
+          
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage("User is not Existed");
+        });
     }
-    else {
-      message = CheckValidData(email.current.value, password.current.value,fullName.current.value);
+
+    //Sign Up
+    else if (!isSignInForm) {
+      message = CheckValidData(
+        email.current.value,
+        password.current.value,
+        fullName.current.value
+      );
       setErrorMessage(message);
+      if (errorMessage) return;
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          const user = userCredential.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage("User already exists");
+        });
     }
   };
   return (

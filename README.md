@@ -8,8 +8,12 @@
 Routing
 Form validation
 useRef hook
+Firebase deploy
+    npm run build
+    firebase deploy
 
 - Browse Page
     - header
     - background movie playing
         - on this title, description, play button and more info
+

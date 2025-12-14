@@ -4,6 +4,11 @@
 
 #Features
 -Login SignIn/Sign Up form
+- Header
+Routing
+Form validation
+useRef hook
+
 - Browse Page
     - header
     - background movie playing

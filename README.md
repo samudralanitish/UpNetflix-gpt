@@ -9,6 +9,8 @@ Firebase deploy
     firebase deploy
 Sign In && Sign Up creation from Firebase
 Creation of Redux Store with UserSlice and Provided our Store to App.js
+Implemented Signout
+Updated Profile.
 
 
 

@@ -13,6 +13,7 @@ Implemented Signout
 Updated Profile.
 BugFix: Sign up user displayname andd profile picture update
 BugFix: If the user is not logged in Redirect /browse to Login page and vice-versa
+- Unsubscribed to the onAuthStateChange Callback
 
 
 

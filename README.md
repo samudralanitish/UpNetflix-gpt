@@ -11,6 +11,9 @@ Sign In && Sign Up creation from Firebase
 Creation of Redux Store with UserSlice and Provided our Store to App.js
 Implemented Signout
 Updated Profile.
+BugFix: Sign up user displayname andd profile picture update
+BugFix: If the user is not logged in Redirect /browse to Login page and vice-versa
+
 
 
 

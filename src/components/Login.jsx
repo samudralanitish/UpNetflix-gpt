@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BANNER, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -66,7 +67,7 @@ const Login = () => {
           updateProfile(user, {
             displayName: fullName.current.value,
             photoURL:
-              "https://nitishsamudrala.netlify.app/static/media/me1.a5028f98f60b39a291ad.png",
+              USER_AVATAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -94,7 +95,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/bebd95d0-65f9-41a9-9d12-4794db63653e/web/IN-en-20250922-TRIFECTA-perspective_5e75cfb4-3797-4f17-866b-181ff91a51dd_large.jpg" />
+        <img src={BANNER} />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

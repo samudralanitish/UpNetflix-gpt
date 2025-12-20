@@ -17,6 +17,13 @@ BugFix: If the user is not logged in Redirect /browse to Login page and vice-ver
 
 - Registered for TMDB API & Create an app & get access tocken
 - Get data from TMDB now playing movies list API.
+- CustomHooks for nowplaing movies
+planning for main and secondary container
+fetch data for trailer video
+update store with trailer video data
+embed the youtube video and make it autoplay and mute
+tailwind classes to make main container look awesome
+Built Secondary Container
 
 
 

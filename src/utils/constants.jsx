@@ -3,4 +3,13 @@ export const LOGO =
 export const BANNER =
     "https://assets.nflxext.com/ffe/siteui/vlv3/bebd95d0-65f9-41a9-9d12-4794db63653e/web/IN-en-20250922-TRIFECTA-perspective_5e75cfb4-3797-4f17-866b-181ff91a51dd_large.jpg"; 
 export const USER_AVATAR =
-  "https://nitishsamudrala.netlify.app/static/media/me1.a5028f98f60b39a291ad.png";
+    "https://nitishsamudrala.netlify.app/static/media/me1.a5028f98f60b39a291ad.png";
+  
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYjgxYjIxOGE3MjI0OTcxZDRhNzUzNTNjYmUyNmVlNSIsIm5iZiI6MTc1OTU3MTM4My4yMjcsInN1YiI6IjY4ZTBlZGI3OWZlOTYyMDQzOTM2ZGNmYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Vvb8w5FEm-LnEoGdROANFd4vPv0yCTkEfIFWqpLresw",
+  },
+};

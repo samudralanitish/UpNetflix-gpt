@@ -24,7 +24,10 @@ update store with trailer video data
 embed the youtube video and make it autoplay and mute
 tailwind classes to make main container look awesome
 Built Secondary Container
-
+GPT Search Page
+GPT Search Bar
+ *** Multi Lingual Feature in our app ***
+ 
 
 
 

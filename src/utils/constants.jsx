@@ -15,3 +15,10 @@ export const API_OPTIONS = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "telugu", name: "తెలుగు" },
+  { identifier: "hindi", name: "हिन्दी" },
+  { identifier: "spanish", name: "española" },
+];
